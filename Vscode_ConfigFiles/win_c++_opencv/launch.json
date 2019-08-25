@@ -2,7 +2,6 @@
 
     "version": "0.2.0",
     "configurations": [
-        
         {
             "name": "(gdb) Launch",
             "type": "cppdbg",
@@ -13,7 +12,7 @@
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
             "environment": [],
-            "externalConsole": false,
+            "externalConsole": true,
             "MIMode": "gdb",
             "miDebuggerPath": "gdb.exe",
             "setupCommands": [

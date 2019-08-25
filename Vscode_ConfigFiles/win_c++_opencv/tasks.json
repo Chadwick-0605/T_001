@@ -1,6 +1,5 @@
 {
-    // See https://go.microsoft.com/fwlink/?LinkId=733558
-    // for the documentation about the tasks.json format
+   
     "version": "2.0.0",
     "tasks": [
         {
@@ -9,10 +8,29 @@
             "command": "g++",
             "args": [
                 "-g",
-                "-Wall",
+                "-std=c++11",
+                "${file}",
                 "-o",
                 "${workspaceFolder}/${fileBasenameNoExtension}.exe",
-                "${file}"
+                "-I","F:\\opencv_4.1.0\\opencv\\build\\include",
+                "-I","F:\\opencv_4.1.0\\opencv\\build\\include\\opencv2",
+                "-L","F:\\opencv_4.1.0\\opencv\\build\\x64\\MinGW\\bin",
+                "-l","opencv_calib3d410",
+                "-l","opencv_core410",
+                "-l","opencv_dnn410",
+                "-l","opencv_features2d410",
+                "-l","opencv_flann410",
+                "-l","opencv_gapi410",
+                "-l","opencv_highgui410",
+                "-l","opencv_imgcodecs410",
+                "-l","opencv_imgproc410",
+                "-l","opencv_ml410",
+                "-l","opencv_objdetect410",
+                "-l","opencv_photo410",
+                "-l","opencv_stitching410",
+                "-l","opencv_video410",
+                "-l","opencv_videoio410"
+                
             ],
             "group": {
                 "kind": "build",

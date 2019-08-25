@@ -3,14 +3,16 @@
         {
             "name": "Win32",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "F:\\opencv_4.1.0\\opencv\\build\\include",
+                "F:\\opencv_4.1.0\\opencv\\build\\include\\opencv2"
             ],
             "defines": [
                 "_DEBUG",
                 "UNICODE",
                 "_UNICODE"
             ],
-            "compilerPath": "G:\\Program Files\\MinGW\\mingw64\\bin\\gcc.exe",
+            "compilerPath": "G:\\Program Files\\MinGW\\mingw64\\bin\\g++.exe",
             "cStandard": "c11",
             "cppStandard": "c++17",
             "intelliSenseMode": "clang-x64"
